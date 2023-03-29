@@ -53,12 +53,6 @@ package by.itstep.javatraining.revision.task;
 
 public class Task05 {
     public static String task05(int a, int b, int n) {
-        while (b >= 100) {
-            b = b - 100;
-            a = a + 1;
-        }
-        a = a * n;
-        b = b * n;
-        return (a > 0 || b > 0) && a > (-1) && b > (-1) && n > 0 ? Integer.toString(a) + " " + Integer.toString(b) : "error";
+        return "error";
     }
 }
