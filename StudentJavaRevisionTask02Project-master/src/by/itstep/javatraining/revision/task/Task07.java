@@ -38,6 +38,18 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static int task07(int number) {
-        return 0;
+        if (number < 0) {
+            number = -number;
+        }
+        String num = Integer.toString(number);
+        if (num.length() > 4) {
+            return 0;
+        }
+        int sum = 0;
+        while (number != 0) {
+            sum += (number % 10);
+            number /= 10;
+        }
+        return sum;
     }
 }
